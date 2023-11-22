@@ -7,9 +7,6 @@ def my_mul(x, y):
     """A function that multiply. """
     return x*y
 
-def my_rest(x, y):
-    """A function that multiply. """
-    return x-y
 
 def suma_alternada(n):
     suma = 0
