@@ -1,7 +1,0 @@
-setup.py
-Pydoku.egg-info/PKG-INFO
-Pydoku.egg-info/SOURCES.txt
-Pydoku.egg-info/dependency_links.txt
-Pydoku.egg-info/not-zip-safe
-Pydoku.egg-info/top_level.txt
-pydoku/__init__.py
