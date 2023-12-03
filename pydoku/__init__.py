@@ -2,3 +2,4 @@
 
 from pydoku.matrix import *
 from pydoku.row import *
+from pydoku.column import *
