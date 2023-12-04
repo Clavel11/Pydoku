@@ -7,3 +7,10 @@ def search_in_row(M, index_row):
         if M[index_row][i] != 0:
             op_row.append(M[index_row][i])
     return op_row
+
+def options_row(matrix_s, num_row):
+    options = [1,2,3,4,5,6,7,8,9]
+    for digit in matrix_s[num_row]:
+        if digit !=0:
+            options.remove(digit)
+    return options
