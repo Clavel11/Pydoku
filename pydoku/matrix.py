@@ -8,3 +8,10 @@ def matrix_sudoku(index_row, index_column, digit):
     for i in range(len(digit)):
         mat_sudoku[index_row[i]][index_column[i]] = digit[i]
     return mat_sudoku
+
+mat_sudoku_4x4 = np.zeros((4, 4), dtype=int)
+
+def matrix_sudoku(index_row, index_column, digit):
+    for i in range(len(digit)):
+        mat_sudoku_4x4[index_row[i]][index_column[i]] = digit[i]
+    return mat_sudoku_4x4
