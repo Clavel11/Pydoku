@@ -14,3 +14,10 @@ def options_row(matrix_s, num_row):
         if digit !=0:
             options.remove(digit)
     return options
+
+def options_row_4x4(matrix_s, num_row):
+    options = [1,2,3,4]
+    for digit in matrix_s[num_row]:
+        if digit !=0:
+            options.remove(digit)
+    return options
