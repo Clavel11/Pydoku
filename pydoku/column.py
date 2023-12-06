@@ -1,9 +1,9 @@
 """Functions for columns"""
 
-def search_in_column(M, index_column):
-    """Function that determines which values within a column are non-zero"""
-    op_column = []
-    for i in range(9):
-        if M[i][index_column] != 0:
-            op_column.append(M[i][index_column])
-    return op_column
+def options_column(matrix_s, index_column):
+    """Function that determines the options within a column"""
+    options = [1,2,3,4]
+    for digit in matrix_s[:,index_column]:
+        if digit !=0:
+            options.remove(digit)
+    return options
