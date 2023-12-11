@@ -3,7 +3,7 @@
 import itertools
 from pydoku.row import *
 
-def checkValidFunc(row, column, num):
+def check_valid(row, column, num):
     """Auxiliary function to check if the digit to be assigned is not repeated in the column and in the 3x3 submatrix"""
     global mat_s
     for i in range(0, 9):
@@ -29,7 +29,7 @@ def solve_sudoku():
             for permut in row_permut:
                 if mat_s[row,column] == 0:
                     for num in permut:
-                        if checkValidFunc(row, column, num):
+                        if check_valid(row, column, num):
                             mat_s[row][column] = num
                             solve_sudoku() #prevee el futuro
                             mat_s[row][column] = 0
