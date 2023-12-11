@@ -1,7 +1,5 @@
 import numpy as np
 
-mat_s = np.zeros((9, 9), dtype=int)
-
 def matrix_sudoku(index_row, index_column, digit):
     """Function to fill the predefined cells of a 9x9 matrix to a sudoku problem"""
     global mat_s
@@ -16,3 +14,4 @@ def print_matrix():
     for row in mat_s:
         print(row)
 
+mat_s = np.zeros((9, 9), dtype=int)
