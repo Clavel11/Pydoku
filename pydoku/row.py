@@ -1,5 +1,6 @@
 """Function for rows"""
 
+import numpy as np
 mat_s = np.zeros((9, 9), dtype=int)
 
 def options_row(index_row):
