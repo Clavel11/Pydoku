@@ -35,5 +35,5 @@ def solve_s():
                             mat_s[row][column] = 0
                     return
     print("Solution for the Sudoku Problem: ")
-    printMatrix()
+    print_matrix()
 
