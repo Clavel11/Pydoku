@@ -15,6 +15,11 @@ This function initialize the sudoku matrix `mat_s` (which initially contains onl
 import numpy as np
 import itertools
 
+def printMatrix():
+    global mat_s
+    for row in mat_s:
+        print(row)
+
 def matrix_sudoku(index_row, index_column, digit):
     global mat_s
     print("Here is the Sudoku Problem :")
