@@ -25,3 +25,23 @@ Here is the Sudoku Problem :
 [5 0 0 0 4 0 7 0 0]
 [0 0 0 0 0 0 1 0 6]
 ```
+## How `check_valid` function works?
+
+`check_valid`function has three arguments: `row`, `column`, and `num`. All three are int type.
+
+First, the function checks if `num` is within the `column`, and also within the submatrix, if both don't contain this `num`, the function returns `True`, but if `num` is in the `column` or the submatrix then the function returns `False`.
+
+In particular, `square_row` and `square_column` put us in the first cell within the submatrix where is `num`.
+
+For example, if we want to know if it is valid to put 7 in row 6 and column 7, in the previous example, we run the function:
+
+```python
+check_valid(6, 7, 7)
+```
+```
+False
+```
+As we can note, is `False` because there is a 7 within the submatrix.
+
+## How `solve_sudoku` function works?
+
