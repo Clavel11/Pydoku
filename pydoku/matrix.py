@@ -4,7 +4,7 @@ import itertools
 mat_s = np.zeros((9, 9), dtype=int)
 
 def matrix_sudoku(index_row, index_column, digit):
-    """Function to fill the predefined cells of a 9x9 matrix to a sudoku problem""""
+    """Function to fill the predefined cells of a 9x9 matrix to a sudoku problem"""
     global mat_s
     print("Here is the Sudoku Problem :")
     for i in range(len(digit)):
