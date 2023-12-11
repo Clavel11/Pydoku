@@ -1,6 +1,7 @@
 """Functions to solve a sudoku"""
 
 import itertools
+from pydoku.row import options_row
 
 def checkValidFunc(row, column, num):
     """Auxiliary function to check if the digit to be assigned is not repeated in the column and in the 3x3 submatrix"""
