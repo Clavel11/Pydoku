@@ -20,7 +20,7 @@ def checkValidFunc(row, column, num):
 def solve_s():
     global mat_s
     for row in range(9):
-        row_permut = list(itertools.permutations(options_row_4x4(row))) #lista de permutaciones
+        row_permut = list(itertools.permutations(options_row(row))) #lista de permutaciones
         for column in range(9):
             for permut in row_permut:
                 if mat_s[row,column] == 0:
