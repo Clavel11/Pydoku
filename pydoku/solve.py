@@ -20,7 +20,7 @@ def checkValidFunc(row, column, num):
                 return False
     return True
 
-def solve_s():
+def solve_sudoku():
     """Function to fill the sudoku matrix by row"""
     global mat_s
     for row in range(9):
@@ -31,7 +31,7 @@ def solve_s():
                     for num in permut:
                         if checkValidFunc(row, column, num):
                             mat_s[row][column] = num
-                            solve_s() #prevee el futuro
+                            solve_sudoku() #prevee el futuro
                             mat_s[row][column] = 0
                     return
     print("Solution for the Sudoku Problem: ")
