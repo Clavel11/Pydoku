@@ -1,7 +1,6 @@
 """Function for rows"""
 
-import numpy as np
-mat_s = np.zeros((9, 9), dtype=int)
+from pydoku.matrix import *
 
 def options_row(index_row):
     """Function to search digits that are not in a specific row"""
