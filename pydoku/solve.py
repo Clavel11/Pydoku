@@ -7,9 +7,6 @@ def check_valid(row, column, num):
     """Auxiliary function to check if the digit to be assigned is not repeated in the column and in the 3x3 submatrix"""
     global mat_s
     for i in range(0, 9):
-        if mat_s[row][i] == num:
-            return False
-    for i in range(0, 9):
         if mat_s[i][column] == num:
             return False
     square_row = (row // 3) * 3
