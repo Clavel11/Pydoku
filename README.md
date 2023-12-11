@@ -1,6 +1,6 @@
 ## How `matrix_sudoku`function works?
 
-`matrix_sudoku`function has three arguments: `index_row`, `index_column` and `digit`. All three are list type. 
+`matrix_sudoku` function has three arguments: `index_row`, `index_column` and `digit`. All three are list type. 
 
 This function initializes the sudoku matrix `mat_s` (which initially contains only zeros) with the digits corresponding to the sudoku problem we want to solve and then print the matrix. It is important to mention that the elements of `index_row` and `index_column` must be ordered and must be match the indexes of the cells where the digits of list `digit` must be placed.
 
@@ -27,7 +27,7 @@ Here is the Sudoku Problem :
 ```
 ## How `check_valid` function works?
 
-`check_valid`function has three arguments: `row`, `column`, and `num`. All three are int type.
+`check_valid` function has three arguments: `row`, `column`, and `num`. All three are int type.
 
 First, the function checks if `num` is within the `column`, and also within the submatrix, if both don't contain this `num`, the function returns `True`, but if `num` is in the `column` or the submatrix then the function returns `False`.
 
@@ -41,7 +41,7 @@ check_valid(6, 7, 7)
 ```
 False
 ```
-As we can note, is `False` because there is a 7 within the submatrix.
+As we can note, the result is `False` because there is a 7 within the submatrix.
 
 ## How `solve_sudoku` function works?
-
+`solve_sudoku` is a recursive function without arguments, due to operating on the global variable. It moves through rows; for each row, a list of permutations of valid options is generated. Then, it takes out the appropriate permutatión to solve the problem. 
