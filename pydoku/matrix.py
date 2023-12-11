@@ -8,9 +8,9 @@ def matrix_sudoku(index_row, index_column, digit):
     print("Here is the Sudoku Problem:")
     for i in range(len(digit)):
         mat_s[index_row[i]][index_column[i]] = digit[i]
-    printMatrix()
+    print_matrix()
 
-def printMatrix():
+def print_matrix():
     """Function to print a matrix by row"""
     global mat_s
     for row in mat_s:
