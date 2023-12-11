@@ -18,9 +18,10 @@ def checkValidFunc(row, column, num):
     return True
 
 def solve_s():
+  """Function to fill the sudoku matrix by row""""
     global mat_s
     for row in range(9):
-        row_permut = list(itertools.permutations(options_row(row))) #lista de permutaciones
+        row_permut = list(itertools.permutations(options_row(row))) #permutation list for the row options
         for column in range(9):
             for permut in row_permut:
                 if mat_s[row,column] == 0:
