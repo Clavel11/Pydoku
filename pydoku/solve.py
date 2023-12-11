@@ -2,6 +2,7 @@
 
 import numpy as np
 import itertools
+from pydoku.row import *
 
 mat_s = np.zeros((9, 9), dtype=int)
 
