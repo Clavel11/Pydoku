@@ -1,4 +1,13 @@
 ## How `matrix_sudoku`function works?
+```python
+def matrix_sudoku(index_row, index_column, digit):
+    global mat_s
+    print("Here is the Sudoku Problem :")
+    for i in range(len(digit)):
+        mat_s[index_row[i]][index_column[i]] = digit[i]
+    printMatrix()
+```
+
 `matrix_sudoku`function have three arguments: `index_row`, `index_column` and `digit`. All three are list type. 
 This function initialize the sudoku matrix `mat_s` (which initially contains only zeros) with the digits corresponding to the sudoku problem we want to solve. 
 
