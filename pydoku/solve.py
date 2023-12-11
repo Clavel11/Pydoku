@@ -1,7 +1,7 @@
 """Functions to solve a sudoku"""
 
 def checkValidFunc(row, column, num):
-  """Auxiliary function to check if the digit to be assigned is not repeated in the column and in the 3x3 submatrix"""
+    """Auxiliary function to check if the digit to be assigned is not repeated in the column and in the 3x3 submatrix"""
     global mat_s
     for i in range(0, 9):
         if mat_s[row][i] == num:
@@ -18,7 +18,7 @@ def checkValidFunc(row, column, num):
     return True
 
 def solve_s():
-  """Function to fill the sudoku matrix by row"""
+    """Function to fill the sudoku matrix by row"""
     global mat_s
     for row in range(9):
         row_permut = list(itertools.permutations(options_row(row))) #permutation list for the row options
