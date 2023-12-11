@@ -1,9 +1,7 @@
 """Functions to solve a sudoku"""
 
-import numpy as np
 import itertools
 from pydoku.row import *
-from pydoku.matrix import *
 
 mat_s = np.zeros((9, 9), dtype=int)
 
