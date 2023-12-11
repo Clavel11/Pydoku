@@ -15,6 +15,13 @@ This function initialize the sudoku matrix `mat_s` (which initially contains onl
 import numpy as np
 import itertools
 
+def matrix_sudoku(index_row, index_column, digit):
+    global mat_s
+    print("Here is the Sudoku Problem :")
+    for i in range(len(digit)):
+        mat_s[index_row[i]][index_column[i]] = digit[i]
+    printMatrix()
+
 mat_s = np.zeros((9, 9), dtype=int)
 index_row = [0, 0, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 7, 8, 8]
 index_column = [4, 7, 0, 2, 3, 7, 1, 2, 4, 7, 1, 2, 5, 0, 4, 1, 3, 5, 8, 0, 4, 6, 6, 8]
