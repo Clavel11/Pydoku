@@ -1,5 +1,4 @@
 import numpy as np
-import itertools
 
 mat_s = np.zeros((9, 9), dtype=int)
 
