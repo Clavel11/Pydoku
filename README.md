@@ -1,8 +1,8 @@
 ## How `matrix_sudoku`function works?
 
-`matrix_sudoku`function have three arguments: `index_row`, `index_column` and `digit`. All three are list type. 
+`matrix_sudoku`function has three arguments: `index_row`, `index_column` and `digit`. All three are list type. 
 
-This function initialize the sudoku matrix `mat_s` (which initially contains only zeros) with the digits corresponding to the sudoku problem we want to solve and then print the matrix. It is important to mention that the elements of `index_row` and `index_column` must be ordered and must be match the indexes of the cells where the digits of list `digit` must be placed.
+This function initializes the sudoku matrix `mat_s` (which initially contains only zeros) with the digits corresponding to the sudoku problem we want to solve and then print the matrix. It is important to mention that the elements of `index_row` and `index_column` must be ordered and must be match the indexes of the cells where the digits of list `digit` must be placed.
 
 Here is an example of how this function is executed
 
