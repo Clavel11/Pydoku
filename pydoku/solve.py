@@ -1,5 +1,7 @@
 """Functions to solve a sudoku"""
 
+mat_s = np.zeros((4, 4), dtype=int)
+
 def checkValidFunc(row, column, num):
   """Auxiliary function to check if the digit to be assigned is not repeated in the column and in the 3x3 submatrix"""
     global mat_s
