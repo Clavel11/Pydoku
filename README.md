@@ -1,1 +1,1 @@
-# How `matrix_sudoku` works?
+## How `matrix_sudoku`function works?
