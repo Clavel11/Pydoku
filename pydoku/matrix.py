@@ -1,3 +1,5 @@
+"""Functions to initialize and print the sudoku matrix"""
+
 import numpy as np
 
 def matrix_sudoku(index_row, index_column, digit):
