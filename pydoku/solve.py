@@ -27,7 +27,7 @@ def solve_sudoku():
                     for num in permut:
                         if checkValidFunc(row, column, num):
                             mat_s[row][column] = num
-                            solve_s() #prevee el futuro
+                            solve_sudoku() #prevee el futuro
                             mat_s[row][column] = 0
                     return
     print("Solution for the Sudoku Problem: ")
