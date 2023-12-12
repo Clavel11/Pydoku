@@ -17,7 +17,7 @@ def check_valid(row, column, num):
                 return False
     return True
 
-def solve_s():
+def solve_sudoku():
     global mat_s
     for row in range(9):
         row_permut = list(itertools.permutations(options_row(row))) #lista de permutaciones
