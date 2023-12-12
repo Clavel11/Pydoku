@@ -17,20 +17,18 @@ def check_valid(row, column, num):
                 return False
     return True
 
-def solve_sudoku():
-    """Function to fill the sudoku matrix by row"""
+def solve_s():
     global mat_s
     for row in range(9):
-        row_permut = list(itertools.permutations(options_row(row))) #permutation list for the row options
-        for column in range(9):
-            for permut in row_permut:
+        row_permut = list(itertools.permutations(options_row(row))) #lista de permutaciones
+        for permut in row_permut:
+            for column in range(9):
                 if mat_s[row,column] == 0:
                     for num in permut:
-                        if check_valid(row, column, num):
+                        if checkValidFunc(row, column, num):
                             mat_s[row][column] = num
-                            solve_sudoku() #foresee the future
+                            solve_s() #prevee el futuro
                             mat_s[row][column] = 0
                     return
     print("Solution for the Sudoku Problem: ")
-    print_matrix()
-
+    printMatrix()
