@@ -25,7 +25,7 @@ def solve_sudoku():
             for column in range(9):
                 if mat_s[row,column] == 0:
                     for num in permut:
-                        if checkValidFunc(row, column, num):
+                        if check_valid(row, column, num):
                             mat_s[row][column] = num
                             solve_sudoku() #prevee el futuro
                             mat_s[row][column] = 0
